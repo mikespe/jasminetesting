@@ -100,9 +100,14 @@ $(function() {
       var oldentry;
       var newentry;
 
+      //before each it in this describe
+
       beforeEach(function(done){
+          //load array[0] feed
           loadFeed(0, function(){
+              //var equals all html of feed class ele
               oldentry = $('.feed').html();
+              //load array[1]
               loadFeed(1, function(){
                   newentry = $('.feed').html();
                   done();
