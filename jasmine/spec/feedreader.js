@@ -97,7 +97,6 @@ $(function() {
     describe('New Feed Selection', function() {
 
       //init oldentry
-
       var oldentry;
       var newentry;
 
