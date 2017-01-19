@@ -30,7 +30,8 @@ $(function() {
 
         it('url are defined in all array objects', function() {
           //loop throgh array
-          for(i=0; i<allFeeds.length; i++) {
+          len = allFeeds.length;
+          for(i=0; i<len; i++) {
             //expect the url to be defined
             expect(allFeeds[i].url).toBeDefined();
             //expect allfeeds url to not be an empty string
@@ -116,8 +117,6 @@ $(function() {
       });
 
          it('when a new feed is loaded, the content changes', function() {
-           //newentry is the html from the beforeeach loadfeed 2
-           newentry = $('.feed').html();
            //expect oldentry to be different than newentry
            expect(oldentry).not.toBe(newentry);
          });
