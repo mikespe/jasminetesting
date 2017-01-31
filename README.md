@@ -37,4 +37,4 @@ test the underlying business logic of the application as well as the event handl
 
 # Obstacles
 
-Async requests were tricky to test for
+Async requests were tricky to test for.
